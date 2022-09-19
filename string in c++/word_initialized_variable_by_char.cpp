@@ -10,17 +10,13 @@ int main()
     char y[10] = "hello man";
 //    or, char y[10] = { 'H', 'e', 'l', 'l', 'o', ' ', 'm', 'a', 'n', '\0' }
 
-//    char myword = { 'B', 'y', 'e', '\0' }; --> give an error, do it by two ways
+//    char myword = { 'B', 'y', 'e', '\0' }; --> give an error, do it by this way
 
-//    char myword[4];
-//    myword[0]='B';
-//    myword[1]='y';
-//    myword[2]='e';
-//    myword[3]='\0';
-
-//        or
     char myword[4];
-    cin>>myword;
+    myword[0]='B';
+    myword[1]='y';
+    myword[2]='e';
+    myword[3]='\0';
 
     cout<<z<<endl;
     cout<<x<<endl;
