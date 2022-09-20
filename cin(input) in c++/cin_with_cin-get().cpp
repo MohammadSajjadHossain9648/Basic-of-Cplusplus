@@ -28,11 +28,14 @@ int main() {
   here, 1 is char. So that output is y=49 from ASCII table. Here, x and y are
   int and input value is char. So it is convert to char into int.
 
-  How to solve this garbage issue? not found
+  How to solve this garbage issue?  found
+  
+     #include<limits>
+   cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
   issues:
   console input:
-  1.2 or 1’2
+  1.2 or 1â€™2
   value of a and b is 1 0
   value of x and y is -1 -1
 
