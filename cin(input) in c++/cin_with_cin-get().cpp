@@ -31,7 +31,7 @@ int main() {
   How to solve this garbage issue?  found
   
      #include<limits>
-   cin.ignore(numeric_limits<streamsize>::max(),'\n');
+     cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
   issues:
   console input:
