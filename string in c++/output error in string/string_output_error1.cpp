@@ -12,11 +12,12 @@ int main() {
     else if(a >= 'A' && a <= 'Z'){
         cout<<'this is upercase';
     }
-    if(a >= '0' && a <= '9'){
+    else if(a >= '0' && a <= '9'){
         cout<<'this is numeric';
     }
     //issue 1: why give garbage value?
-    //sol: double apostrophes are used to represent sentence and string. single apostrophes are used to represent characters.
+    //sol: double apostrophes are used to represent sentence and string. single apostrophes are used to represent characters. 
+    //In cout line, we print a sentence. so we need to use double apostrophes.
 
 /* issue 2:
     char a;
@@ -36,7 +37,7 @@ int main() {
     sol:
     : In C++, single apostrophes are used to represent characters, not strings.
      So here I input char not string. If we take string variable, then we use double apostrophes.
-     Otherwise for char variable, we use single apostrophes in code where yellow mark highlighted.
+     Otherwise for char variable, we use single apostrophes in code where condition is written.
 */
 /*
     issue 3:
@@ -56,7 +57,7 @@ int main() {
     Input: a12/aAS    output: lowercase
     Input: 123/1A    output: numeric
 
-    Sol: some important things about input cin. cin only take single int, char etc.
+    Sol: some important things about input cin. cin only take single int, char etc. use single apostrophes in condition like a>='a'
 */
 /*
     issue 4:
@@ -77,13 +78,10 @@ int main() {
     Input: 123/1A    output:
 
     why output show nothing?
-    Sol: char a[25] can use with cin.get like as example
-        char name[25];
-        cin.get(name, 25);
-        cout << name;
+    Sol: becuase input can take more than one character and use single apostrophes in condition like a>='a'
 *//*
     issue 5:
-    string a[5];
+    string a;
     cout<<"enter single char: a..z/A..Z/0..9" <<endl;
     cin >> a;  //show error here not executable.
 
@@ -99,5 +97,7 @@ int main() {
     Input: a12/aAS    output: lowercase
     Input: 123/1A    output: numeric
 
+    error: we give single word and then store in string a as single character so that result show correctly. but theoritically wrong.
+    sol:so never take string for single character input.
 */
 }
