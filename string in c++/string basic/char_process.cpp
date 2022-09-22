@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+// to know more go: https://www.programiz.com/cpp-programming/library-function/cstring/strcmp
+	
 	char s1[10] = "Hello";
 
 	// return length of s1
