@@ -226,6 +226,25 @@ int main()
     //    int r7;
     //    cout<<"enter row for pattern 7: "<<endl;
     //    cin>>r7;
+    //
+    //    for(int i=1;i<=r7;i++){
+    //        for(int j=1;j<=r7-i+1;j++){
+    //            cout<<j<<" ";
+    //        }
+    //
+    //        for(int k=2;k<i*2;k++){
+    //            cout<<"* ";
+    //        }
+    //        for(int l=r7-i+1;l>=1;l--){
+    //            cout<<l<<" ";
+    //        }
+    //        cout<<endl;
+    //    }
+    
+    //    or
+    //    int r7;
+    //    cout<<"enter row for pattern 7: "<<endl;
+    //    cin>>r7;
     //    int x;
     //
     //    for(int i=1;i<=r7;i++){
