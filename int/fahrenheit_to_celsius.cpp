@@ -8,7 +8,7 @@ int main()
     cin>>n;
 
     double x;
-    x = (n-32)*5/9.0;
+    x = (n-32)*5/9.0;  //x = (n-32)*(5/9.0); or, x = (n-32)*(5.0/9); 
 
     cout<<"celsius (in degrees): "<<x<<endl;
     return 0;
