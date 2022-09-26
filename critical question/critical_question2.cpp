@@ -5,10 +5,15 @@ int main() {
     int a = 2;
     int b = a+1;
 
-    if((a=3)==b){ //((a=2)==b) or ((a==3)==b) or ((a==2)==b)
+    if((a=3)==b){ //we can assign here variable value like a=3
         cout<<a;
     }
     else{
-        cout<<a+1;
+        cout<<a+2;
     }
+    
+    
+    /*note:
+    in if condition, a is assigned 3. and a==b is true. so it print 3.
+    */
 }
