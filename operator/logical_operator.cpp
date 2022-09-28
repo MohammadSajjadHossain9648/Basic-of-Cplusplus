@@ -18,21 +18,24 @@ int main()
     cout << "c = "<<c<<", d = "<<d <<endl<<endl;
 
     // logical AND example
+    cout<<"a > b && c == d: ";
     if (a > b && c == d)
-        cout<<"a is greater than b AND c is equal to d\n"<<endl;
+        cout<<"a is greater than b AND c is equal to d"<<endl;
     else
-        cout<<"AND condition not satisfied\n"<<endl;
+        cout<<"AND condition not satisfied"<<endl;
 
     // logical OR example
+    cout<<"a > b || c == d: ";
     if (a > b || c == d)
-        cout<<"a is greater than b OR c is equal to d\n"<<endl;
+        cout<<"a is greater than b OR c is equal to d"<<endl;
     else
         cout<<"Neither a is greater than b nor c is equal "
-               " to d\n"<<endl;
+               " to d"<<endl;
 
     // logical NOT example
+    cout<<"!a: ";
     if (!a)
-        cout<<"a is zero\n"<<endl;
+        cout<<"a is zero"<<endl;
     else
         cout<<"a is not zero"<<endl;
 
@@ -42,11 +45,9 @@ int main()
     //    a = 11, b = 5
     //    c = 10, d = 20
     //
-    //    AND condition not satisfied
-    //
-    //    a is greater than b OR c is equal to d
-    //
-    //    a is not zero
+    //    a > b && c == d: AND condition not satisfied
+    //    a > b || c == d: a is greater than b OR c is equal to d
+    //    !a: a is not zero
     
     
     
