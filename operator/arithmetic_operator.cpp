@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
 /*
-	Arithmetic Operators
-        1. Unary Operators (++, –-)
+    Arithmetic Operators
+        1. Unary Operators (++, â€“-)
         2. Binary Operators (+, -, *, /, %)
 */
 
@@ -44,26 +44,27 @@ int main()
     num2=--i; //here, i=5. First i is decreased by 1 which is 4. then num2 is store 4 and i=4.
 
     cout<<"Pre-increment (++i): Before assigning the value to the variable, the value is incremented by one."<<endl;
-    cout<<"Post-increment (i++): After assigning the value to the variable, the value is incremented."<<endl;
+    cout<<"Post-increment (i++): After assigning the value to the variable, the value is incremented."<<endl<<endl;
 
-    cout<<"post-increment of num1: "<<num1<<endl;
-    cout<<"pre--increment of num2: "<<num2<<endl;
-    cout<<"post-decrement of num1: "<<num1<<endl;
-    cout<<"pre-decrement of num2: "<<num2<<endl;
+    cout << "i = "<<i<<endl;
+    cout<<"post-increment of num1 (num1=i++): "<<num1<<endl;
+    cout<<"pre--increment of num2 (num2=++i): "<<num2<<endl;
+    cout<<"post-decrement of num1 (num1=i--): "<<num1<<endl;
+    cout<<"pre-decrement of num2 (num2=--i): "<<num2<<endl;
 
     /*
-    int num5= i+1; // here, i never increase.
-    cout<<"num5: "<<num5<<endl;
+    num1= i+1; // here, i never increase.
+    cout<<"num1: "<<num1<<endl;
     cout<<"i: "<<i<<endl; //4
 
     solve this next line code
     */
 
-    int num5= i;
-    i+=1; // same as a=a+1, a+=1
+    num1= i;
+    i+=1; // same as a=a+1, a++
 
-    cout<<"num5: "<<num5<<endl;
-    cout<<"i: "<<i<<endl<<endl; //5
+    cout<<"num1: "<<num1<<endl;
+    cout<<"i: "<<i<<endl; //5
 
     // output:
     //    Arithmetic Operators
@@ -80,11 +81,13 @@ int main()
     //
     //    Pre-increment (++i): Before assigning the value to the variable, the value is incremented by one.
     //    Post-increment (i++): After assigning the value to the variable, the value is incremented.
-    //    post-increment of num1: 6
-    //    pre--increment of num2: 4
-    //    post-decrement of num1: 6
-    //    pre-decrement of num2: 4
-    //    num5: 4
+    //
+    //    i = 4
+    //    post-increment of num1 (num1=i++): 6
+    //    pre--increment of num2 (num2=++i): 4
+    //    post-decrement of num1 (num1=i--): 6
+    //    pre-decrement of num2 (num2=--i): 4
+    //    num1: 4
     //    i: 5
 }
 
