@@ -19,8 +19,10 @@ int main()
 
     cout << "x %= 5 gives : " << (x %= 5) <<endl;
     // or can be write same as 
-    //    x %= 5;
-    //    cout << "x %= 5 gives : " << x <<endl; 
+    //    int x;
+    //    cout << "Initial value of x is " << (x=5) <<endl;
+    //    x += 5;
+    //    cout << "x += 5 gives : " << x <<endl; 
 
     // output:
     //    Assignment Operators (=, +=, -=, *=, /=, %=)
