@@ -3,8 +3,10 @@ using namespace std;
 
 int main()
 {
-// Logical Operators (&&, ||, !)
-
+/*
+     Logical Operators (&&, ||, !)
+     to know more: https://www.geeksforgeeks.org/operators-in-c-set-2-relational-and-logical-operators/
+*/
     int a = 11;
     int b = 5;
     int c = 10;
@@ -45,4 +47,36 @@ int main()
     //    a is greater than b OR c is equal to d
     //
     //    a is not zero
+    
+    
+    
+// Short-Circuiting in Logical Operators:
+
+    cout<<endl<<"Short-Circuiting in Logical Operators: "<<endl<<endl;
+    
+    //In the case of logical AND, the second operand is not evaluated if the first operand is false.
+    //For example, program below doesn’t print “GeeksQuiz” as the first operand of logical AND itself is false.
+    cout<<"res1: ";
+    bool res1 = ( (a == b) && cout<<"GeeksQuiz" );
+
+    //But the below program prints “GeeksQuiz” as the first operand of logical AND is true.
+    cout<<endl<<"res2: ";
+    bool res2 = ( (a != b) && cout<<"GeeksQuiz" );
+
+    //In the case of logical OR, the second operand is not evaluated if the first operand is true.
+    //For example, program below doesn’t print “GeeksQuiz” as the first operand of logical OR itself is true.
+    cout<<endl<<"res3: ";
+    bool res3 = ( (a != b) || cout<<"GeeksQuiz" );
+
+    //But the below program prints “GeeksQuiz” as the first operand of logical OR is false.
+    cout<<endl<<"res4: ";
+    bool res4= ( (a == b) || cout<<"GeeksQuiz" );
+
+    // output:
+    //    Short-Circuiting in Logical Operators:
+    //
+    //    res1:
+    //    res2: GeeksQuiz
+    //    res3:
+    //    res4: GeeksQuiz
 }
