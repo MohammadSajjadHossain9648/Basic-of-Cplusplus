@@ -18,6 +18,9 @@ int main()
     cout << "x /= 5 gives : " << (x /= 5) <<endl;
 
     cout << "x %= 5 gives : " << (x %= 5) <<endl;
+    // or can be write same as 
+    //    x %= 5;
+    //    cout << "x %= 5 gives : " << x <<endl; 
 
     // output:
     //    Assignment Operators (=, +=, -=, *=, /=, %=)
