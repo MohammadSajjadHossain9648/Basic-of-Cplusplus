@@ -7,7 +7,7 @@ int main()
     cout<<"input an integer: ";
     cin>>n;
 
-    // we can use int prime=0; as alternative and just change the value prime=1 into while or for loop and write If(prime==0/prime!=1/!prime) in last line.
+    // we can use bool/int prime=0; as alternative and just change the value prime=1 into while or for loop and write If(prime==0/prime!=1/!prime) in last line.
     bool prime= true; //or, bool prime;
 
     for(int i=2; i<=n/2; i++)
@@ -24,8 +24,8 @@ int main()
 
 
 /*
-    note:if we use this code in a project, dont use return 0 instead of break function into while or for loop.
-    because it stop running the project. we need to use break function and bool(bool prime) value to check.
+    note:if we use this code in a project, dont use return 0 instead of break statement into while or for loop.
+    because it stop running the project. we need to use break statement and bool(bool prime) value to check.
 
     int n,i=2;
     cout<<"input an integer: ";
@@ -46,7 +46,7 @@ int main()
 
     }
 
-    //   or can use for loop instead of for loop
+    //   or can use while loop instead of for loop
 
     while(i<=n/2){
         if(n%i==0){
@@ -66,9 +66,9 @@ int main()
 
 
 /*
-    note: if number is not prime number, we can stop executing this program by return 0 instead of break function writing into while or for loop.
+    note: if number is not prime number, we can stop executing this program by return 0 instead of break statement writing into while or for loop.
 
-    danger alert: if, we use this code in a project, dont use return 0 in while or for loop.
+    danger alert: if, we use this code in a project, dont use return 0 into while or for loop.
     because it stop running the project.
 
 
