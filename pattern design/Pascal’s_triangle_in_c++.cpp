@@ -15,7 +15,7 @@ int main()
           1   4   6   4   1
     */
 
-//  Pascal’s Triangle or :
+//  Pascal’s Triangle or triangle fibonacci series:
 //              1
 //            1   1
 //          1   2   1
