@@ -667,11 +667,11 @@ int main()
     cout<<"y = "<<y<<endl;
 
     z = (y++, y + 10, 99 + y);
-    cout <<"value of z = (y++, y + 10, 99 + y) "<<z<<endl;
+    cout <<"value of z = (y++, y + 10, 99 + y): "<<z<<endl;
 
     // output:
     //    y = 100
-    //    value of z is 200
+    //    value of z = (y++, y + 10, 99 + y): 200
 
     /*
         Incrementing value of y and assigning result to variable z.
