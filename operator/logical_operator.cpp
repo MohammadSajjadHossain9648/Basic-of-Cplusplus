@@ -80,4 +80,24 @@ int main()
     //    res2: GeeksQuiz
     //    res3:
     //    res4: GeeksQuiz
+     
+     
+     
+// another example of logical operator
+     string hex_num;
+    cout<<"enter a hexadecimal number: ";
+    cin>>hex_num;
+
+    for(int i=0; i<hex_num.length(); i++)
+    {
+        if( !(hex_num[i]>='0' && hex_num[i]<='9') || !(hex_num[i]>='A' && hex_num[i]<='F') )
+        {
+            cout<<"invalid input"<<endl<<endl;
+            return 0;
+        }
+    }
+     
+    //output:
+    //enter a hexadecimal number: 12H
+    //invalid input
 }
