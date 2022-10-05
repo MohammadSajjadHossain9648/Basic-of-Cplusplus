@@ -84,13 +84,15 @@ int main()
      
      
 // another example of logical operator
-     string hex_num;
+    string hex_num;
     cout<<"enter a hexadecimal number: ";
     cin>>hex_num;
 
+    //check every single digit which is 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. otherwise give error and then exit.
+    //reason behind: hex number system is base 16 number system and uses 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F.
     for(int i=0; i<hex_num.length(); i++)
     {
-        if( !(hex_num[i]>='0' && hex_num[i]<='9') || !(hex_num[i]>='A' && hex_num[i]<='F') )
+        if( !(hex_num[i]>='0' && hex_num[i]<='9') && !(hex_num[i]>='A' && hex_num[i]<='F') )
         {
             cout<<"invalid input"<<endl<<endl;
             return 0;
@@ -98,6 +100,6 @@ int main()
     }
      
     //output:
-    //enter a hexadecimal number: 12H
+    //enter a hexadecimal number: 1H2
     //invalid input
 }
