@@ -23,7 +23,7 @@ int main()
 /*
     // without using length
 
-    int answer=0; ;
+    int answer=0;
 
     while(num!=0)
     {
@@ -36,10 +36,24 @@ int main()
 
 
 /*
-    // with using length and pow function
+    // with using for, length and pow function
     int length=floor(log10(num));  //input:123, length=2
 
-    int answer=0; ;
+    int answer=0;
+
+    for(int i=length; i>=0; i--){
+        int last_digit = num%10;
+        answer += last_digit*pow(10,i);
+        num /=10;
+    }
+    cout<<"reverse integer is "<<answer<<endl;
+*/
+
+/*
+    // with using while, length and pow function
+    int length=floor(log10(num));  //input:123, length=2
+
+    int answer=0;
 
     while(num!=0)
     {
