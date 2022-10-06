@@ -11,8 +11,8 @@ int main()
     int answer=0;
     while(num!=0)
     {
-        answer=answer*10+num%10;
-        num/=10;
+        answer = (answer*10) + (num%10);
+        num /= 10;
     }
     cout<<"reverse integer is "<<answer<<endl;
 
