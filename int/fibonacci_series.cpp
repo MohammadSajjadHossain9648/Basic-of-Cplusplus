@@ -3,6 +3,10 @@ using namespace std;
 
 int main()
 {
+    /*
+        to know more: https://codescracker.com/cpp/program/cpp-program-print-fabonacci-series.htm
+    */
+    
     int x;
     cout<<"number of element to print: ";
     cin>>x;
