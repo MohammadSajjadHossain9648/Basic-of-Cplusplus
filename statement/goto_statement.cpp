@@ -6,8 +6,20 @@ int main()
     /*
         to know more: https://www.geeksforgeeks.org/exit-a-loop-in-c/?ref=rp
     */
+    // print 1 to 10 using goto statement
+    int num6 = 1;
+label:
+    cout<<num6<<" ";
+    num6++;
 
-
+    if(num6<=10)
+    {
+        goto label;
+    }
+    
+    // output: 1 2 3 4 5 6 7 8 9 10
+    
+// another example:
     int i=1;
 label:
     while(i<=10)
