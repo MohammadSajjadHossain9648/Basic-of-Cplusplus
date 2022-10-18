@@ -2,7 +2,8 @@
 using namespace std;
 
 // global variable
-int number1 = 5;
+int number1 = 5; // can be write this way -> #define number1 5
+
 
 int main()
 {
