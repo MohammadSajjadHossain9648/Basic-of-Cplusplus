@@ -4,7 +4,6 @@ using namespace std;
 /*
     to know more: https://www.geeksforgeeks.org/sort-c-stl/
 */
-
 int main()
 {
     int array[]= {1,7,5,4,3,6,2,8};
