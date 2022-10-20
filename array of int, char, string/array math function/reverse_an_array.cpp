@@ -17,6 +17,7 @@ int main()
     }
     cout<<endl;
 
+    // add header #include<algorithm>
     reverse(arr, arr+length);
 
     //print the reverse array
