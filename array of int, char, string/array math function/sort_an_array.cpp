@@ -3,7 +3,8 @@
 using namespace std;
 /*
     to know more: https://www.geeksforgeeks.org/sort-c-stl/
-                  https://www.digitalocean.com/community/tutorials/sort-in-c-plus-plus      
+                  https://www.digitalocean.com/community/tutorials/sort-in-c-plus-plus
+                  https://www.studytonight.com/cpp/stl/stl-sorting-algorithms
 */
 int main()
 {
