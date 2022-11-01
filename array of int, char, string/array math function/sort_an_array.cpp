@@ -26,6 +26,9 @@ int main()
     
     //Sorting in Descending Order
     sort(array2, array2+size2, greater<int>());
+    /* can be write Sorting in Descending Order by using a lambda function
+        sort(array2, array2+size2, [](int &e1, int &e2){ return e1>e2; } );
+    */
 
     //print the reverse array in Ascending Order
     cout<<endl<<"sort array in Ascending Order: ";
