@@ -41,9 +41,9 @@ int main()
     
     //print the reverse array in Descending Order
     cout<<endl<<"sort array in Descending Order: ";
-    for(int i=0; i<size; i++)
+    for(int i=0; i<size2; i++)
     {
-        cout<<array[i]<<"  ";
+        cout<<array2[i]<<"  ";
     }
     cout<<endl;
 
