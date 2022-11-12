@@ -9,14 +9,21 @@ int main()
     string a = "Simple Questions To Check Your Software Testing Knowledge ";
     map<string, int> myMap;
 
+    //divide all word from sentence
     stringstream s(a);
 
-    string word;
+    //print all separate words
+    for(auto i: a)
+        cout<<i;
+    cout<<endl;
 
-    while (s >> word)
-        myMap[word]++;
+    // now count the all separate words
+    string word_count;
 
-    for (auto i: myMap)
+    while (s >> word_count)
+        myMap[word_count]++;
+
+    for(auto i: myMap)
         cout<<i.first<<" -> "<< i.second<<"\n";
     
     /* same as above for loop
