@@ -32,4 +32,15 @@ int main()
         cout<< it->first <<" -> "<< it->second <<"\n";
     */
     return 0;
+    
+    //output:
+    //    Simple Questions To Check Your Software Testing Knowledge
+    //    Check -> 1
+    //    Knowledge -> 1
+    //    Questions -> 1
+    //    Simple -> 1
+    //    Software -> 1
+    //    Testing -> 1
+    //    To -> 1
+    //    Your -> 1
 }
