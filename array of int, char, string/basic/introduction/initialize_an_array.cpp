@@ -25,7 +25,7 @@ int main()
     int integer_num[] = { 1, 2, 3, 4, 5 };
     float float_num[] = { 1.2, 2.4, 3.6, 4.8, 5.10 };
     double double_num[] = { 1.22, 2.44, 3.66, 4.88, 5.100 };
-    char character_num[] = { 'a', 'b', 'c', 'd', 'e' };
+    char character_num[] = { 'a', 'b', 'c', 'd', 'e' }; // show error if, char character_num[] = { 'a', '2', 'c', 'd', 'e' }; cause char array takes no int number.
     string string_num[] = { "apple", "banana", "lichi" };
 
     cout<<"One-Dimensional Array for any datatype: ";
