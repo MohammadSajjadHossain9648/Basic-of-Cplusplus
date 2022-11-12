@@ -16,9 +16,13 @@ int main()
     while (s >> word)
         myMap[word]++;
 
+    for (auto i: myMap)
+        cout<<i.first<<" -> "<< i.second<<"\n";
+    
+    /* same as above for loop
     map<string, int>::iterator it;
     for (it = myMap.begin(); it != myMap.end(); it++)
-        cout << it->first << " -> "
-             << it->second << "\n";
+        cout<< it->first <<" -> "<< it->second <<"\n";
+    */
     return 0;
 }
