@@ -12,16 +12,14 @@ int main()
     //divide all word from sentence
     stringstream s(a);
 
-    //print all separate words
-    for(auto i: a)
-        cout<<i;
+    string words;
+
+    // now store all separate words
+    while (s >> words) //here store all words in string words
+    {
+        myMap[words]++; //it seems like myMap[string][count]
+    }
     cout<<endl;
-
-    // now count the all separate words
-    string word_count;
-
-    while (s >> word_count)
-        myMap[word_count]++;
 
     for(auto i: myMap)
         cout<<i.first<<" -> "<< i.second<<"\n";
