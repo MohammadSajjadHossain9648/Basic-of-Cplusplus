@@ -44,7 +44,6 @@ int main()
     
     
     
-
 //method 2:
     string s = "aababcaab";
     int len = s.length();
