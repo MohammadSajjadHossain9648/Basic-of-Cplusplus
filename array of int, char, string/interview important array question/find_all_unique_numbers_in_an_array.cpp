@@ -16,35 +16,37 @@ int main()
     sort(arr, arr+length);
 
     cout<<"Unique numbers in given array are: ";
-    for(int i=0; i<length; i++)
+    for (int i=0; i<length; i++)
     {
-        int count = 0;
-        for(int j=length-1; j>=i; j--)
+        if(arr[i]==arr[i+1])
         {
-            if(arr[i] == arr[j])
-            {
-                count++;
-            }
+            continue;
         }
-
-        cout<<arr[i]<<" ";
-        i += (count-1);
+        else
+        {
+            cout<<arr[i]<<" ";
+        }
     }
 
-    // or can be write this way
+
+
+    // or can be write this more efficient way
 
     // Finding unique numbers
     //    cout<<"Unique numbers in given array are: ";
-    //    for (int i=0; i<length; i++)
+    //    for(int i=0; i<length; i++)
     //    {
-    //        if(arr[i]==arr[i+1])
+    //        int count = 0;
+    //        for(int j=length-1; j>=i; j--)
     //        {
-    //            continue;
+    //            if(arr[i] == arr[j])
+    //            {
+    //                count++;
+    //            }
     //        }
-    //        else
-    //        {
-    //            cout<<arr[i]<<" ";
-    //        }
+    //
+    //        cout<<arr[i]<<" ";
+    //        i += (count-1);
     //    }
 
     //output:
