@@ -21,7 +21,7 @@ using namespace std;
 int main()
 {
 // input an array from user
-    char ch[100];
+    char ch[100]; //same as string ch; cause string is same type of char array
     int len;
     cout<<"\nenter the character length: ";
     cin>>len;
