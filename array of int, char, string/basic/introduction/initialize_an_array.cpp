@@ -20,6 +20,42 @@ using namespace std;
 
 int main()
 {
+// input an array from user
+    char ch[100];
+    int len;
+    cout<<"\nenter the character length: ";
+    cin>>len;
+    ch[len];
+
+    //it is efficient for single char input
+    //cin>>ch; //it take space -> len = 5, input =  tige r, output = tige
+
+    
+    for(int i=0; i<len; i++)
+    {
+        cin>>ch[i]; //it take space -> len = 5, input =  tige r, output = tiger
+    }
+
+    cout<<"\nchar ch[] = "<<ch<<endl;
+
+    //or can be print
+    cout<<"\nchar ch[] = ";
+    for(int i=0; i<len; i++) 
+    {
+        cout<<ch[i]<<" ";
+    }
+    cout<<endl;
+    
+    /*output:
+    enter the character length: 10
+    i am new here
+
+    char ch[] = iamnewhere
+
+    char ch[] = i a m n e w h e r e
+    */
+    
+    
 // One-Dimensional Array:
     // initialising an array -> data_type variable_name[size of array]
     int integer_num[] = { 1, 2, 3, 4, 5 };
