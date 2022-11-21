@@ -81,22 +81,122 @@ int main()
 
 
 // Two-Dimensional Array:
-    int arr3 [3][2] = { {0, 2}, {1, 4}, {3, 7} };
-    cout<<endl<<"Two-Dimensional Array: "<<endl;
-    for(int i=0; i<3; i++)
+    // input an 2d-array from user
+    int arr3[100][100];
+
+    int r, c;
+    cout<<"\nEnter row and column number: \n";
+    cin>>r>>c;
+
+    cout<<endl<<"\nEnter Two-Dimensional Array value: "<<endl;
+    for(int row=0; row<r; row++)
     {
-        for(int j=0; j<2; j++)
+        for(int column=0; column<c; column++)
         {
-            cout<<arr3[i][j]<<" ";
+            cin>>arr3[row][column];
         }
         cout<<endl;
     }
 
+    //print row wise 2d-array
+    cout<<"\nTwo-Dimensional Array(row * column): "<<endl;
+    for(int row=0; row<r; row++)
+    {
+        for(int column=0; column<c; column++)
+        {
+            cout<<arr3[row][column]<<" ";
+        }
+        cout<<endl;
+    }
+
+    //print column wise 2d-array
+    cout<<"\nTwo-Dimensional Array(column * row): "<<endl;
+    for(int column=0; column<c; column++)
+    {
+        for(int row=0; row<r; row++)
+        {
+            cout<<arr3[row][column]<<" ";
+        }
+        cout<<endl;
+    }
+    /* can also write column wise 2d-array
+    for(int row=0; row<c; row++)
+    {
+        for(int column=0; column<r; column++)
+        {
+            cout<<arr3[column][row]<<" ";
+        }
+        cout<<endl;
+    }
+    */
+
+
+
+    //initialize Two-Dimensional Array
+    int arr4 [3][2] = { {1, 2}, {3, 4}, {5, 6} }; //same as -> int arr3 [3][2] = {1, 2, 3, 4, 5, 6};
+
+    //print row wise 2d-array
+    cout<<"\nTwo-Dimensional Array(row * column): "<<endl;
+    for(int row=0; row<3; row++)
+    {
+        for(int column=0; column<2; column++)
+        {
+            cout<<arr4[row][column]<<" ";
+        }
+        cout<<endl;
+    }
+
+    //print column wise 2d-array
+    cout<<"\nTwo-Dimensional Array(column * row): "<<endl;
+    for(int column=0; column<2; column++)
+    {
+        for(int row=0; row<3; row++)
+        {
+            cout<<arr4[row][column]<<" ";
+        }
+        cout<<endl;
+    }
+    /* can also write column wise 2d-array
+    for(int row=0; row<c; row++)
+    {
+        for(int column=0; column<r; column++)
+        {
+            cout<<arr3[column][row]<<" ";
+        }
+        cout<<endl;
+    }
+    */
+
     //output:
-    //    Two-Dimensional Array:
-    //    0 2
-    //    1 4
-    //    3 7
+    //    Enter row and column number:
+    //    3
+    //    4
+    //
+    //
+    //    Enter Two-Dimensional Array value:
+    //    1 2 3 4 5 6 7 8 9 10 11 12
+    //
+    //
+    //    Two-Dimensional Array(row * column):
+    //    1 2 3 4
+    //    5 6 7 8
+    //    9 10 11 12
+    //
+    //    Two-Dimensional Array(column * row):
+    //    1 5 9
+    //    2 6 10
+    //    3 7 11
+    //    4 8 12
+    //
+    //
+    //    Two-Dimensional Array(row * column):
+    //    1 2
+    //    3 4
+    //    5 6
+    //
+    //    Two-Dimensional Array(column * row):
+    //    1 3 5
+    //    2 4 6
 
 //Multidimensional Array:
     int array[5][10][4];
