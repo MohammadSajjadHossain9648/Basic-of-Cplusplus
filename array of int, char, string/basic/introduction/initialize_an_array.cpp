@@ -81,6 +81,66 @@ int main()
     //output:
     //    One-Dimensional Array for any datatype: 1.22  2.44  3.66  4.88   5.1
 
+    
+    /*
+        Initialize all elements of an array in C/C++
+
+    approach 1. Using Initializer List
+        The array will be initialized to 0 if we provide the empty initializer list or just specify 0 in the initializer list.
+        int arr[5];
+        int arr[5] = {};
+        int arr[5] = { 0 };  // results in [0, 0, 0, 0, 0]
+        ----------------------------------------------------------------------------------------------------------
+        To initialize an array in C/C++ with the same value, the naive way is to provide an initializer list like,
+        int arr[5] = { 1, 1, 1, 1, 1};
+        // or don't specify the size
+        int arr[] = { 1, 1, 1, 1, 1 };
+        ----------------------------------------------------------------------------------------------------------
+        this can be write using for loop
+        for (int i = 0; i < 5; i++)
+        {
+            arr[i] = 1;
+        }
+
+
+
+    approach 2. Using Designated Initializers
+        With GCC compilers, we can use designated initializers. To initialize a range of elements to the same value,
+        we can write [first ... last] = value.
+
+        int arr[5] = {[0 ... 4] = 1}; same as approach 1 first one
+        // or don't specify the size
+        int arr[] = {[0 ... 4] = 1};
+
+
+
+    approach 3. Using fill_n function
+        int arr[5];
+        fill_n(arr, 5, 1); //->fill_n( variable_name, size_of_array, value )
+        for(int i: arr5)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl<<endl;
+
+
+
+
+    approach 4. Initialize an Array with same value using Macros
+        int arr[] = {x32, x8, x2, x1}; -> see value in header
+
+        // n = 43 = (32 + 8 + 2 + 1)
+        int n = sizeof(arr) / sizeof(int);
+        for (int i = 0; i < n; i++)
+        {
+            cout << arr[i] << " ";
+        }
+        cout<<endl;
+
+        //output:
+        //  10 10 10 ... 10 (43 times)
+
+    */
 
 
 
@@ -256,65 +316,5 @@ int main()
 
 //Multidimensional Array:
     int array[5][10][4];
-
-    /*
-        Initialize all elements of an array in C/C++
-
-    approach 1. Using Initializer List
-        The array will be initialized to 0 if we provide the empty initializer list or just specify 0 in the initializer list.
-        int arr[5];
-        int arr[5] = {};
-        int arr[5] = { 0 };  // results in [0, 0, 0, 0, 0]
-        ----------------------------------------------------------------------------------------------------------
-        To initialize an array in C/C++ with the same value, the naive way is to provide an initializer list like,
-        int arr[5] = { 1, 1, 1, 1, 1};
-        // or don't specify the size
-        int arr[] = { 1, 1, 1, 1, 1 };
-        ----------------------------------------------------------------------------------------------------------
-        this can be write using for loop
-        for (int i = 0; i < 5; i++)
-        {
-            arr[i] = 1;
-        }
-
-
-
-    approach 2. Using Designated Initializers
-        With GCC compilers, we can use designated initializers. To initialize a range of elements to the same value,
-        we can write [first ... last] = value.
-
-        int arr[5] = {[0 ... 4] = 1}; same as approach 1 first one
-        // or don't specify the size
-        int arr[] = {[0 ... 4] = 1};
-
-
-
-    approach 3. Using fill_n function
-        int arr[5];
-        fill_n(arr, 5, 1); //->fill_n( variable_name, size_of_array, value )
-        for(int i: arr5)
-        {
-            cout<<i<<" ";
-        }
-        cout<<endl<<endl;
-
-
-
-
-    approach 4. Initialize an Array with same value using Macros
-        int arr[] = {x32, x8, x2, x1}; -> see value in header
-
-        // n = 43 = (32 + 8 + 2 + 1)
-        int n = sizeof(arr) / sizeof(int);
-        for (int i = 0; i < n; i++)
-        {
-            cout << arr[i] << " ";
-        }
-        cout<<endl;
-
-        //output:
-        //  10 10 10 ... 10 (43 times)
-
-    */
 
 }
