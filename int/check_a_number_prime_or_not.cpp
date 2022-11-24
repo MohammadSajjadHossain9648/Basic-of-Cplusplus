@@ -10,6 +10,12 @@ int main()
     // we can use bool/int prime=0; as alternative and just change the value prime=1 into while or for loop and write If(prime==0/prime!=1/!prime) in last line.
     bool prime= true; //or, bool prime;
 
+    if(n < 2) 
+    {
+        cout<<n<<" is not a prime number"<<endl;
+        prime=false;
+    }
+    
     for(int i=2; i<=n/2; i++)
     {
         if(n%i==0){
