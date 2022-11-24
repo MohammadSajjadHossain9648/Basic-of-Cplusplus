@@ -24,7 +24,8 @@ int main()
             break;
         }
     }
-    if(prime){ // if write only bool prime, use if(!prime)
+    if(prime)   // if write only bool prime in line 11, use if(!prime)
+    { 
         cout<<n<<" is a prime number"<<endl;
     }
 
@@ -37,19 +38,26 @@ int main()
     cout<<"input an integer: ";
     cin>>n;
 
-    bool prime= false;
+    bool prime = true;
+    
+    if(n < 2) 
+    {
+        cout<<n<<" is not a prime number"<<endl;
+        prime = false;
+    }
 
     for(i=2;i<=n/2;i++){
         if(n%i==0){
             cout<<n<<" is not prime number."<<endl;
-            prime=true;
+            prime = false;
             break;
         }
         i+=1;
     }
-    if(!prime){ //line means "if prime is not true"
+    
+    if(prime) //line means "if prime is true"
+    { 
         cout<<n<<" is a prime number."<<endl;
-
     }
 
     //   or can use while loop instead of for loop
@@ -57,13 +65,14 @@ int main()
     while(i<=n/2){
         if(n%i==0){
             cout<<n<<" is not prime number."<<endl;
-            prime=true;
+            prime = false;
             break;
         }
         i+=1;
     }
 
-    if(!prime){ //line means "if prime is not true"
+    if(prime) //line means "if prime is true"
+    { 
         cout<<n<<" is a prime number."<<endl;
     }
 
