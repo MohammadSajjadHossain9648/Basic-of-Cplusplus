@@ -32,7 +32,6 @@ int countPrimes(int num)
 
     return count;
 }
-
 int main()
 {
     int num;
