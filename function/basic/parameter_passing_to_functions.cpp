@@ -17,6 +17,7 @@ using namespace std;
     Pass by Reference: Both actual and formal parameters refer to the same locations, so any changes
     made inside the function are actually reflected in the actual parameters of the caller.
 */
+
 //pass by value or call by value
 int power(int x, int y)
 {
@@ -28,6 +29,7 @@ int power(int x, int y)
     return answer;
 }
 
+
 //pass by reference or call by reference
 int squareRoot(int *x)
 {
@@ -38,6 +40,14 @@ int squareRoot2(int &x)
 {
     x = sqrt(x);
 }
+
+
+//pass by reference or call by reference without changing original value
+int squareRoot3(const int &x)
+{
+    return sqrt(x);
+}
+
 
 int main()
 {
@@ -70,6 +80,18 @@ int main()
     //    squareroot of (100): 10
     //
     //    squareroot of (144): 12
+
+    
+    
+//pass by reference or call by reference without changing original value by using const
+    int e = 169;
+    int result = squareRoot3(e);
+    cout<<"\n\nint e = "<<e;
+    cout<<"\nsquareroot of (169): "<<result;
+
+    //output:
+    //    int e = 169
+    //    squareroot of (169): 13
 
 
 
