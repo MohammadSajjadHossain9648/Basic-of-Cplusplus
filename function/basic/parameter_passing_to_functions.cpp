@@ -5,18 +5,19 @@ using namespace std;
 /*
     to know more: https://www.geeksforgeeks.org/functions-in-cpp/
                   https://www.programiz.com/cpp-programming/function
+                  https://www.cs.fsu.edu/~myers/c++/notes/references.html
 */
 /*
     There are two most popular ways to pass parameters:
 
     Pass by Value: In this parameter passing method, values of actual parameters are copied to the
-    function’s formal parameters and the two types of parameters are stored in different memory locations.
+    function's formal parameters and the two types of parameters are stored in different memory locations.
     So any changes made inside functions are not reflected in the actual parameters of the caller.
 
     Pass by Reference: Both actual and formal parameters refer to the same locations, so any changes
     made inside the function are actually reflected in the actual parameters of the caller.
 */
-
+//pass by value or call by value
 int power(int x, int y)
 {
     int answer = 1;
@@ -27,28 +28,49 @@ int power(int x, int y)
     return answer;
 }
 
+//pass by reference or call by reference
 int squareRoot(int *x)
 {
     *x = sqrt(*x);
 }
 
+int squareRoot2(int &x)
+{
+    x = sqrt(x);
+}
+
 int main()
 {
-    //pass by value
+//pass by value or call by value
+//Note that the original variables passed into the function from main() are not affected by the function call
     int a = 10;
     int b = 2;
     int answer1 = power(a, b);
-    cout<<"power of (10, 2): "<<answer1<<endl;
-
-    //pass by reference
-    int a = 100;
-    squareRoot(&a);   //never use int answer2 = power2(&a); cause it store address of a.
-    cout<<endl<<"squareroot of (100): "<<a<<endl;
+    cout<<"\npower of (10, 2): "<<answer1;
 
     //output:
+    //
     //    power of (10, 2): 100
+
+
+
+//pass by reference or call by reference
+//Note that the original variables passed into the function from main() DO get changed by the function
+    int c = 100;
+    squareRoot(&c);   //never use int answer2 = squareRoot(&c); cause it store address of c.
+    cout<<"\n\nsquareroot of (100): "<<c;
+
+    //another example same as above
+    int d = 144;
+    squareRoot2(d);   //never use int answer2 = squareRoot2(d); cause it store address of d.
+    cout<<"\n\nsquareroot of (144): "<<d;
+
+    //output:
     //
     //    squareroot of (100): 10
+    //
+    //    squareroot of (144): 12
+
 
 
 
@@ -68,9 +90,9 @@ int main()
     Functions Using Pointers
     The function squareRoot() expects a pointer x to an integer (or an address of an integer).
     It modifies the value at the address x. The dereference operator * is used to access the value at an address.
-    In the statement ‘*x = sqrt(*x)’, the value at address x is changed to 10.
+    In the statement ï¿½*x = sqrt(*x)ï¿½, the value at address x is changed to 10.
     The address operator & is used to get the address of a variable of any data type.
-    In the function call statement ‘squareRoot(&a)’,
+    In the function call statement ï¿½squareRoot(&a)ï¿½,
     the address of a is passed so that a can be modified using its address.
     */
 }
