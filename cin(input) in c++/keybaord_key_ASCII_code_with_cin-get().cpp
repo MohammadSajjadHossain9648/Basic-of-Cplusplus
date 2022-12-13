@@ -2,27 +2,27 @@
 using namespace std;
 
 int main (){
-    
+
     //give as an input in console
-    cout<< "Give a keyboard key :";
+    cout<<"Give a keyboard key :";
     char x = cin.get();
-    cout<< "ASCII Value of keyboard key "<< x <<" is " << int(x) <<endl;
+    cout<<"ASCII Value of keyboard key "<<x<<" is "<<int(x)<<endl;
                             //or
-//    cout<< "Give a keyboard key :";
+//    cout<<"Give a keyboard key :";
 //    int x = cin.get();
-//    cout<< "ASCII Value of keyboard key is " << x <<endl;
+//    cout<<"ASCII Value of keyboard key is "<<x<<endl;
 
 
     //initial  as an input in console
     int y = 'h';
-    cout<< "ASCII Value of keyboard key 'h' is " << y <<endl;
+    cout<<"ASCII Value of keyboard key 'h' is "<<y<<endl;
 
     char ch = 'h';
-    cout<< "ASCII Value of keyboard key "<< ch <<" is " << int(ch) <<endl;
+    cout<<"ASCII Value of keyboard key "<<ch<<" is "<<int(ch)<<endl;
 
-    // using escape sequence for horizontal tab and escape sequence can not see like keyboard key "<< character<<" is " <<.....
+    // using escape sequence for horizontal tab and escape sequence can not see like keyboard key "<<character<<" is "<<.....
     char character = ' \b ';
-    cout<< "ASCII Value of keyboard key is " << int(character) <<endl;
+    cout<<"ASCII Value of keyboard key is "<<int(character)<<endl;
     /*
     The table below lists escape sequences of C++.
 
