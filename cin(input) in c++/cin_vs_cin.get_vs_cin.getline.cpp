@@ -16,7 +16,7 @@ int main()
 
 //    But have a solution for garbage.
 //    #include<limits>
-//    cin.ignore(numeric_limits<streamsize>::max(),'\n');
+//    cin.ignore(); or, cin.ignore(numeric_limits<streamsize>::max(),'\n');
 
     int a1;
     char b1;
@@ -50,10 +50,16 @@ int main()
     //    i
     //    12.233
     //    2.355
-    
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    
-    // *** take single character by char variable
+
+
+
+    cin.ignore();
+
+
+
+
+
+    // *** take single character by char variable ***
     char a;
     cout<<"input a single character: ";
     cin>>a;
@@ -62,9 +68,9 @@ int main()
     //  input: i am new/ iam new /mango is good
     //  output: i / i / m [only take single char and rest remain garbage]
 
-     cin.ignore(numeric_limits<streamsize>::max(), '\n');
+     cin.ignore();
 
-    // *** take single word without limit by char array
+    // *** take single word without limit by char array ***
     string a;
     cout<<"input a word: ";
     cin>>a;
@@ -74,7 +80,7 @@ int main()
     //output: i / iam / mangozzzza [only take a word and rest remain garbage like am new/new]
 
 
-    // take single word with limit by char array
+    // *** take single word with limit by char array ***
     char b[10];
     cout<<"input a word: ";
     cin>>b;  //here, when get space it stop or take full word of 10 characters
@@ -83,45 +89,45 @@ int main()
     //  input: i am new/ iam new/ mangozzzzza is good/ university is good
     //  output: i / iam / mangozzzzz/ university [only take a word and rest remain garbage like am new/new/a is good/...]
 
-    
-    
-    
-    
-
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
 
 
 
-//    cin.get():
+    cin.ignore();
+
+
+
+
+
+                                                //    cin.get():
 //    some important things about input cin.get()
 //    1. cin.get() only take single char, single word, single sentence and never take int, float,double.
 //    2. cin.get() like cin. But it count space/tab/enter when we give input like 5        2.
 
-    
-    //for taking character
+
+    // *** for taking character ***
     char a; //or string a;
     cout<<"input a character: ";
     a=cin.get(); //or same as cin>>a;
     cout<<"give input is"<< a<< "."<<endl; //if you press tab and hit enter it show that output: give input is   .
-    
-    //*** or want to see keyboard ASCII value
+
+    //*** or want to see keyboard ASCII value ***
     int c;
     cout<<"input a character: ";
     c=cin.get();
     cout<<"ASCII value of keyboard key: "<< c <<endl;
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
 
     //    wrong input solve by next code
     //    char b[100];
     //    cout<<"input a word: ";
     //    b=cin.get();// show an error cause b has a variable size.
     //    cout<<"enter word by char variable: "<< b <<endl;
-    
-    
-    //for taking word
+
+
+    //  *** for taking word  ***
     //If we call char array like b[10]. We can input word by this.
     char c[10];
     cout<<"input a word: ";
@@ -130,42 +136,42 @@ int main()
 
     //  input: i am new/ iam new/ mangozzzzza is good
     //  output: i / iam / mangozzzz [only take a word and rest remain garbage like am new/new/za is good]
-    
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    
-    
-    //for taking sentence
+
+    cin.ignore();
+
+
+    // *** for taking sentence  ***
     //If we call char array like b[100]. We can input sentence by this and stop when get '\n'.
     char b[10];
     cout<<"input a sentence: ";
     cin.get(b, 10);
     cout<<"enter sentence by char variable: "<< b <<endl;
-    
+
     //  input a sentence: it is super easy
     //  enter sentence by char variable: it is sup
-    
-
-    
-    
-    
-
-
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
 
 
 
 
-//    cin.getline():
-//***      take a sentence
+
+    cin.ignore();
+
+
+
+
+
+
+                                    //    cin.getline():
+// *** take a sentence  ***
     string c;
     cout<<"input a sentence: ";
     getline(cin, c);
     cout<<"enter sentence by string variable: "<< c <<endl;
 
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
 
 
     char line[20];
@@ -178,4 +184,3 @@ int main()
     //output: i am a good
 
 }
-
