@@ -9,23 +9,16 @@ using namespace std;
     There are two most popular ways to pass parameters:
 
     Pass by Value: In this parameter passing method, values of actual parameters are copied to the
-    function’s formal parameters and the two types of parameters are stored in different memory locations.
+    functionï¿½s formal parameters and the two types of parameters are stored in different memory locations.
     So any changes made inside functions are not reflected in the actual parameters of the caller.
 
     Pass by Reference: Both actual and formal parameters refer to the same locations, so any changes
     made inside the function are actually reflected in the actual parameters of the caller.
 */
 
+// declaration
 //return_type function_name (parameters)
-int power(int a, int b) //int function
-{
-    int answer = 1;
-    for(int i=1; i<=b; i++)
-    {
-        answer = answer * a;
-    }
-    return answer;
-}
+int power(int a, int b);
 
 //1 -> even
 //0 -> odd
@@ -73,4 +66,16 @@ int main()
     //    3
     //
     //    power of (10 , 3): 1000
+}
+
+
+// definition
+int power(int a, int b) //int function
+{
+    int answer = 1;
+    for(int i=1; i<=b; i++)
+    {
+        answer = answer * a;
+    }
+    return answer;
 }
