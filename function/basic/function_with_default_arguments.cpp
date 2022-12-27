@@ -24,6 +24,14 @@ void printArray(int *arr, int start, int end=5)
         cout<<arr[i]<<" ";
     }
 }
+void printArray2(int *arr, int start=0, int end=5) //both start and end set as default argument
+{
+    cout<<"\n\nint arr[] = ";
+    for(int i=start; i<end; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+}
 
 int main()
 {
@@ -48,12 +56,15 @@ int main()
 
     printArray(arr, 0, 10);
     printArray(arr, 0);
+    printArray2(arr);
 
 
 
     //output:
     //
     //    int arr[] = 1 2 3 4 5 6 7 8 9 10
+    //
+    //    int arr[] = 1 2 3 4 5
     //
     //    int arr[] = 1 2 3 4 5
 }
