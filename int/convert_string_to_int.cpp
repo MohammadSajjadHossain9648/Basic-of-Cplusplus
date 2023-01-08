@@ -8,7 +8,20 @@ int main()
         to know more: https://www.geeksforgeeks.org/converting-strings-numbers-c-cpp/
                        https://www.freecodecamp.org/news/string-to-int-in-c-how-to-convert-a-string-to-an-integer-example/#:~:text=One%20effective%20way%20to%20convert,the%20integer%20version%20of%20it.
     */
+    string digits;
+    cout<<"Enter a string int: ";
+    cin>>digits;
 
+    //convert string digits to int number then print
+    int number;
+    for(auto i=0; i<digits.size(); i++)
+    {
+        number = number * 10 + (digits[i] - '0');  //here, (digits[i] - '0') -> string convert to int
+    }
+
+    cout<<"convert string to int: "<<number<<endl<<endl;
+    
+    
     string str;
     cout<<"Enter a string int: ";
     cin>>str;
