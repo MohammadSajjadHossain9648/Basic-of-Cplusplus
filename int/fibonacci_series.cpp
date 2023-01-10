@@ -29,6 +29,11 @@ int main()
     //
     //    Fibonacci series is given below:
     //    0 1 1 2 3 5 8 13 21 34
+    
+    /*
+        Time complexity: O(n) //here, n is the length of array
+        Auxiliary Space: O(1) //here, no need take extra space
+    */
 
     /*
         how to calculate fabonacci seires (next value = sum of back two values)
