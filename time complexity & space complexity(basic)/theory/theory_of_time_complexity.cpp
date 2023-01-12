@@ -212,4 +212,64 @@ using namespace std;
 */
 int main()
 {
+    //example 1:
+    cout << "Hello World";
+    return 0;
+    /*
+    Time Complexity: In the above code “Hello World” is printed only once on the screen.
+    So, the time complexity is constant: O(1) i.e. every time a constant amount of time is required to
+    execute code, no matter which operating system or which machine configurations you are using.
+    */
+
+
+//example 2:
+    int n = 8;
+    for (int i = 1; i <= n; i++)
+    {
+        cout<<"Hello World !!!"<<endl;
+    }
+    /*
+    Time Complexity: In the above code “Hello World !!!” is printed only n times on the screen,
+    as the value of n can change.
+    So, the time complexity is linear: O(n) i.e. every time, a linear amount of time is required to execute code.
+    */
+    //but here
+    for (int i = 1; i <= 8; i++)
+    {
+        cout<<"Hello World !!!"<<endl;
+    }
+    /*
+    Time Complexity: In the above code “Hello World !!!” is printed only 8 times on the screen
+    So, the time complexity is constant: O(1) i.e. every time a constant amount of time is required to
+    execute code, no matter which operating system or which machine configurations you are using.
+    */
+
+//example 3:
+    int N = 5;
+    for(int i=1; i<=N; i++)
+    {
+        for(int j=1; j<=N; j++)
+        {
+            cout<<i<<" "<<j<<endl;
+        }
+    }
+    //here, outer loop i runs N times and inner loop j runs N times.
+    //so time complexity is big-o(N*N)->big-o(N^2).
+
+//example 4:
+    int n1 = 8;
+    for (int i = 1; i <= n1; i=i*2)
+    {
+        cout<<"Hello World !!!"<<endl;
+    }
+    // time complexity: O(log2(n))
+
+
+//example 5:
+    int n2 = 8;
+    for (int i = 2; i <= n2; i=pow(i,2))
+    {
+        cout<<"Hello World !!!"<<endl;
+    }
+    // time complexity: O(log(log n))
 }
