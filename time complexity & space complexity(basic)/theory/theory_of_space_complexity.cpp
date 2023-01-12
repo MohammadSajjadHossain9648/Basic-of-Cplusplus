@@ -56,4 +56,41 @@ using namespace std;
 */
 int main()
 {
+    //example 1:
+    int N1 = 5;
+    for(int i=1; i<=N1; i++)
+    {
+        for(int j=1; j<=N1; j++)
+        {
+            cout<<i<<" "<<j<<endl;
+        }
+    }
+    //here, variable is N1. so space complexity is big-O(1).
+
+//example 2:
+    int arr[5] = {1,2,3,4,5,6};
+    for(int i: arr)
+    {
+        cout<<i<<" ";
+    }
+    cout<<endl;
+    //here, array with fixed size 5. so space complexity is big-O(1).
+
+
+//example 3:
+    int n;
+    cin>>n;
+    int arr[n]; // vector <int> num(n);
+
+    //or
+    for(int i=0; i<5; i++)
+    {
+        int arr2[n]; //or vector <int> v(n);
+        for(int j=0; j<5; j++)
+        {
+
+        }
+    }
+
+    //here, array with size n. so space complexity is big-O(n). cause we don't know the size.
 }
