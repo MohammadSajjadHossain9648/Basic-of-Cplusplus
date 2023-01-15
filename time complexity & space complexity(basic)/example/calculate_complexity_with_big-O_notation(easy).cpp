@@ -25,6 +25,8 @@ using namespace std;
                   https://www.geeksforgeeks.org/analysis-algorithms-set-5-practice-problems/?ref=lbp
 */
 
+// before start please read all theory___.cpp files for theory
+
 /*
 1. Constant Time Complexity Big-O(1):
     // Here c is a constant
@@ -247,7 +249,7 @@ int main()
 //example 1:
     cout << "Hello World";
     /*
-    Time Complexity: In the above code “Hello World” is printed only once on the screen.
+    Time Complexity: In the above code Â“Hello WorldÂ” is printed only once on the screen.
     So, the time complexity is constant: O(1) i.e. every time a constant amount of time is required to
     execute code, no matter which operating system or which machine configurations you are using.
     */
@@ -260,7 +262,7 @@ int main()
         cout<<"Hello World !!!"<<endl;
     }
     /*
-    Time Complexity: In the above code “Hello World !!!” is printed only n times on the screen,
+    Time Complexity: In the above code Â“Hello World !!!Â” is printed only n times on the screen,
     as the value of n can change.
     So, the time complexity is linear: O(n) i.e. every time, a linear amount of time is required to execute code.
     */
@@ -270,7 +272,7 @@ int main()
         cout<<"Hello World !!!"<<endl;
     }
     /*
-    Time Complexity: In the above code “Hello World !!!” is printed only 8 times on the screen
+    Time Complexity: In the above code Â“Hello World !!!Â” is printed only 8 times on the screen
     So, the time complexity is constant: O(1) i.e. every time a constant amount of time is required to
     execute code, no matter which operating system or which machine configurations you are using.
     */
