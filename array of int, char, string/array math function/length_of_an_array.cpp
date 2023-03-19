@@ -65,6 +65,38 @@ int main()
         cout<<array1[i]<<"  ";
     }
 
+
+
+// 2d array
+    int arr[][3] = { {3, 4, 6}, {5, 11, 14}, {22, 25}, {26, 28} };
+
+    int len1 = sizeof(arr)/sizeof(arr[0]);
+    int len2 = sizeof(arr[0])/sizeof(int); //same as -> int len2 = sizeof(arr[0])/sizeof(arr[0][0]);
+
+    cout<<"\n\narr[][5]: \n";
+    for(int i=0; i<len1; i++)
+    {
+        for(int j=0; j<len2; j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<"\nlength of row: "<<len1;
+    cout<<"\nlength of column: "<<len2;
+
     //output:
-    //    array1[] = {}: 1  7  5  4  3  6  2  8
+    //    4
+    //    40
+    //    4
+    //    array1[] = {}: 0  1  2  3  4  5  6  7  8  9
+    //
+    //    arr[][5]:
+    //    3 4 6
+    //    5 11 14
+    //    22 25 0
+    //    26 28 0
+    //
+    //    length of row: 4
+    //    length of column: 3
 }
